@@ -5,19 +5,31 @@ body {
   color: #fff;
 }
 header {
-  background: #0202ed;
-  padding: 0.5rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #fff;
+  /* Remove box-shadow if you want it totally flat, or keep for subtle elevation */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
+
+.nav a {
+  color: #161616;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  background: none;
+  border-radius: 5px;
+  transition: background 0.15s, color 0.16s;
 }
-.logo-bg {
+.nav a.active {
+  background: #efefef;
+  color: #0202ed;
+}
+.nav a.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.nav a:not(.disabled):hover {
+  background: #f0f0f8;
+  color: #0202ed;
+}.logo-bg {
   background: #fff;
   border-radius: 14px;
   padding: 7px 18px 7px 12px;

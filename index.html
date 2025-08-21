@@ -14,9 +14,11 @@
 <body>
   <header>
     <nav class="nav">
-      <img src="images/logo.png" alt="Advance My Idea Logo" class="logo">
+      <div class="logo-bg">
+        <img src="images/logo-horizontal.png" alt="Advance My Idea Logo" class="logo">
+      </div>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Home</a></li>
         <li><a href="#" class="disabled">Services</a></li>
         <li><a href="#" class="disabled">About</a></li>
         <li><a href="#" class="disabled">Contact</a></li>
@@ -26,9 +28,11 @@
   
   <main>
     <section class="hero">
-      <h1>Advance My Idea</h1>
-      <p class="tagline">Digitized Business Services &amp; Passionate Digital Management</p>
-      <a class="cta" href="#">Let’s Get Started</a>
+      <div class="hero-overlay">
+        <h1>Advance My Idea</h1>
+        <p class="tagline">Digitized Business Services &amp; Passionate Digital Management</p>
+        <a class="cta" href="#">Let’s Get Started</a>
+      </div>
     </section>
     <section class="intro">
       <h2>Welcome to the Clean Reboot</h2>
@@ -40,9 +44,8 @@
   </main>
   
   <footer>
-    <p>&copy; 2025 Advance My Idea. Crafted with ❤️ for digital visionaries.</p>
+    <p>&copy; 2025 Advance My Idea. Crafted with <span class="footer-heart">❤️</span> for digital visionaries.</p>
     <div class="socials">
-      <!-- Example social links -->
       <a href="https://twitter.com/arc_0_iris" target="_blank" aria-label="Twitter">🐦</a>
       <a href="#" target="_blank" aria-label="LinkedIn">💼</a>
     </div>
