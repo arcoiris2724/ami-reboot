@@ -39,7 +39,7 @@ header {
   margin-right: 24px;
 }
 .logo {
-  height: 40px;
+  height: px;
   width: auto;
   display: block;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.06));
@@ -167,4 +167,111 @@ footer {
   .logo-bg { padding: 5px 8px 5px 8px; }
   .logo { height: 28px; }
   .hero-overlay { padding: 1.5rem 0.5rem; }
+}
+/* Make hero smaller on subpages */
+.small-hero {
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* About page columns */
+.about-cols {
+  display: flex;
+  gap: 2rem;
+  margin: 2.5rem 0 1.5rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-cols > div {
+  flex: 1 1 220px;
+  background: #222;
+  padding: 1.5rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  min-width: 210px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+/* Service cards */
+.services .service-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+.service-cards .card {
+  background: #fff;
+  color: #161616;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  border-radius: 11px;
+  min-width: 210px;
+  max-width: 270px;
+  flex: 1 1 220px;
+  box-shadow: 0 2px 12px rgba(2,2,237,0.09);
+  text-align: center;
+  margin: 0.5rem;
+}
+.service-cards .card h3 {
+  font-family: 'Cinzel', serif;
+  color: #0202ed;
+  font-size: 1.17rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Contact form styling */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2.5rem 0 2rem 0;
+}
+.contact form {
+  background: #fff;
+  color: #161616;
+  padding: 2rem 1.2rem;
+  border-radius: 13px;
+  min-width: 260px;
+  max-width: 340px;
+  box-shadow: 0 2px 18px rgba(2,2,237,0.09);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.contact form label {
+  font-family: 'Cinzel', serif;
+  font-size: 1.01rem;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+.contact form button {
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+.contact-info {
+  max-width: 300px;
+  color: #fff;
+  font-size: 1.05rem;
+  align-self: center;
+  background: #232323;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+.contact-info a { color: #0202ed; text-decoration: underline; }
+
+@media (max-width: 900px) {
+  .about-cols,
+  .services .service-cards,
+  .contact { flex-direction: column; }
 }
